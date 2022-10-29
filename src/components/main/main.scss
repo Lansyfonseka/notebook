@@ -1,0 +1,16 @@
+@import '../../scss/variables.scss';
+
+.main { 
+}
+
+.main.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .empty_list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    opacity: 0.3;
+  }
+}

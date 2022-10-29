@@ -1,4 +1,4 @@
-import './main.scss';
+import './index.scss';
 import App from './components/app/app';
 
 const appInit = () => {

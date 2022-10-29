@@ -6,7 +6,7 @@ const CopyPlagin = require('copy-webpack-plugin')
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
-  entry: './main.ts',
+  entry: './index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].js'
@@ -20,7 +20,7 @@ module.exports = {
     hot: true
   },
   plugins: [
-    new HTMLWebpackPlagin({template: './main.html'}),
+    new HTMLWebpackPlagin({template: './index.html'}),
     new CleanWebpackPlugin(),
   ],
   module: {

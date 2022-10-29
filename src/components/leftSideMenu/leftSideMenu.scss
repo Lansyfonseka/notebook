@@ -1,0 +1,30 @@
+@import '../../scss/variables.scss';
+
+.left_side_menu {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #0000004d;
+  animation: fade;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+  .menu {
+    width: 312px;
+    height: 100%;
+    background-color: #ffffff;
+    animation-name: side;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes side {
+  0% {transform: translateX(-312px);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes fade {
+  0% {background-color: #00000000;}
+  100% {background-color: #0000004d;}
+}

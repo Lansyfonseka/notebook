@@ -1,4 +1,5 @@
 import './header.scss';
+import LeftSideMenu from '../leftSideMenu/leftSideMenu';
 
 class Header {
   constructor() {
@@ -6,7 +7,11 @@ class Header {
     this.render = this.render.bind(this);
   }
   init() {
-
+    const contatsGroups = document.querySelector('.controls-groups');
+    contatsGroups.addEventListener('click', () => {
+      console.log('Hello world')
+      LeftSideMenu.show();
+    })
   }
 
   render() {
