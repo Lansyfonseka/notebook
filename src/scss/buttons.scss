@@ -17,8 +17,16 @@
 }
 
 .button.blue {
-  background-color: #005BFE;
+  background-color: $app-base-color;
   &:hover {
-    background-color: #0047C6;
+    background-color: #0047c6;
+  }
+}
+
+.button.hidden {
+  color: $app-base-color;
+  background-color: #00000000;
+  &:hover {
+    background-color: #005bfe1a;
   }
 }
